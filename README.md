@@ -1,5 +1,17 @@
 # parcial2-james_david_ortiz
 
+--------------------------------------------------------
+
+## esta es el enlace de la poagina 
+
+https://animedy687-ma.github.io/parcialo-2-james_david_ortiz/
+
+
+-------------------------------------------------------------
+
+
+
+
 Proyecto-Disney/
 ├── index.html          # Página principal con todas las secciones
 ├── style.css           # Archivo de estilos globales
