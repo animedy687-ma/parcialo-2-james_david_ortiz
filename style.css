@@ -230,6 +230,10 @@ main {
     }
 }
 /* COMING SOON */
+section.coming-soon h2 {
+    color: #070707; /* Azul Disney+ */
+}
+
 .coming-soon {
     padding: 60px 30px;
     background-color: #f4f4f4;
@@ -271,47 +275,96 @@ main {
 .coming-card p {
     font-size: 0.9rem;
     margin: 0 10px 10px;
-    color: #b71919;
+    color: #0e0e0e;
 }
 
 /* VACATION SECTION */
+/* Sección Vacation Disney */
 .vacation-disney {
-    padding: 60px 30px;
-    background-color: white;
+    padding: 50px 20px;
+    background: linear-gradient(180deg,  #f4f4f4 0%,  #f4f4f4 100%);
+    color: #fff;
     text-align: center;
 }
 
 .vacation-disney h2 {
-    font-size: 2rem;
-    margin-bottom: 40px;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #0d0d0d;
 }
 
+/* Grid de tarjetas */
 .vacation-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
+    gap: 2px;
+    justify-items: center;
 }
 
+/* Tarjetas */
 .vacation-card {
-    position: relative;
+    background-color: #fefefe;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.4);
     overflow: hidden;
-    border-radius: 10px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 350px;
+    padding: 20px;
+}
+
+.vacation-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.6);
 }
 
 .vacation-card img {
     width: 100%;
     height: auto;
-    display: block;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 
-.vacation-text {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    font-size: 2rem;
+/* Texto dentro de la tarjeta */
+.vacation-card h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.vacation-card p {
+    font-size: 1rem;
+    color: #0c0c0c;
+    margin-bottom: 15px;
+}
+
+/* Botón */
+.vacation-card a {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #0077ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
     font-weight: bold;
-    color: white;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.vacation-card a:hover {
+    background-color: #005bb5;
+    transform: scale(1.05);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .vacation-disney h2 {
+        font-size: 2rem;
+    }
+    .vacation-card h4 {
+        font-size: 1.3rem;
+    }
 }
 
  
