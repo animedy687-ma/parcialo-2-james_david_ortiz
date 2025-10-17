@@ -1,0 +1,233 @@
+/* style.css */
+ 
+/* Fuentes y reinicio básico */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; /* Usa una fuente similar a la de Disney o impórtala */
+    background-color: #f0f2f5; /* Un color de fondo base claro */
+    color: #333;
+}
+ 
+/* Contenedor principal para centrar el contenido */
+main {
+    width: 100%;
+    max-width: 1400px; /* Ancho máximo para pantallas grandes */
+    margin: 0 auto; /* Centrar el contenido */
+}
+ 
+/* CSS para la sección Hero */
+ 
+.hero-section {
+    background-image: url('imagenes/blancanieves.png'); /* Reemplaza con la URL de tu imagen */
+    background-size: cover;
+    background-position: center;
+    height: 600px; /* Altura de la sección */
+    display: flex; /* Usamos flexbox para centrar el contenido */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+ 
+.hero-content {
+    /* Si necesitas un fondo semitransparente detrás del texto para que se lea mejor */
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    padding: 20px;
+    border-radius: 10px;
+}
+ 
+/* style.css */
+.explore-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #0d1a2d; /* Color de fondo oscuro */
+    color: white;
+}
+ 
+.explore-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+ 
+.explore-grid {
+    display: grid;
+    /* Crea 3 columnas de igual tamaño */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Espacio entre las tarjetas */
+}
+ 
+/* Estilos de cada tarjeta */
+.card {
+    background-color: #1a2c42;
+    border-radius: 10px;
+    overflow: hidden; /* Para que la imagen respete los bordes redondeados */
+    text-align: left;
+}
+ 
+.card img {
+    width: 100%; /* La imagen ocupa todo el ancho de la tarjeta */
+    height: auto;
+    display: block;
+}
+ 
+.card h3, .card p, .card a {
+    padding: 0 15px; /* Espaciado interno para el texto */
+}
+ 
+.card h3 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+ 
+.card p {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+ 
+.card a {
+    display: inline-block;
+    margin: 15px 0;
+    padding: 10px 15px;
+    background-color: #1f80e0;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+ 
+.card a:hover {
+    background-color: #2796ff;
+}
+@media (max-width: 768px) {
+    .explore-grid {
+        /* Cambia a 1 columna en pantallas de 768px o menos */
+        grid-template-columns: 1fr;
+    }
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-actions input[type="text"] {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.login-btn {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+/* Yellow Cards Section */
+.yellow-cards {
+    background-color: #65489a; /* color de fondo púrpura similar a la imagen */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 60px 30px;
+}
+
+.card-yellow {
+    background-color: #f9d648;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s;
+}
+
+.card-yellow img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.card-yellow h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #000;
+}
+
+.card-yellow p {
+    font-size: 0.95rem;
+    color: #222;
+    flex-grow: 1;
+}
+
+.card-yellow a {
+    margin-top: 15px;
+    background-color: #000;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.card-yellow:hover {
+    transform: translateY(-5px);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .yellow-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .yellow-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+}
+
+ 
