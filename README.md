@@ -2,7 +2,7 @@
 
 --------------------------------------------------------
 
-## esta es el enlace de la poagina 
+## este es el enlace de la pagina
 
 https://animedy687-ma.github.io/parcialo-2-james_david_ortiz/
 
